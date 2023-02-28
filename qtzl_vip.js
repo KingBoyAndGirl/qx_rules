@@ -3,7 +3,8 @@
 QX:
 [rewrite_local]
 #解锁会员
-^https:\/\/i\.at\.qq\.com\/pay\/memberinfo url script-response-body https://raw.githubusercontent.com/KingBoyAndGirl/qx_rules/main/qtzl_vip.js
+^https://wx-love-api\.afunapp\.com/(proporty/get_user_property|user/get_user_info) url script-response-body https://raw.githubusercontent.com/KingBoyAndGirl/qx_rules/main/qtzl_vip.js
+
 
 [mitm]
 hostname = wx-love-api.afunapp.com
@@ -11,9 +12,8 @@ hostname = wx-love-api.afunapp.com
 */
 
 let obj = JSON.parse($response.body);
-obj = {
-  "is_vip": true,
-  "vip_type": 0
- };
+
+obj.is_vip = true;
+obj.vip_type = 0;
 
 $done({body: JSON.stringify(obj)});
