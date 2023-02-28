@@ -13,7 +13,7 @@ hostname = wx-love-api.afunapp.com
 
 let obj = JSON.parse($response.body);
 
-obj.is_vip = true;
-obj.vip_type = 0;
+obj.data.is_vip = true;
+obj.data.vip_type = 0;
 
 $done({body: JSON.stringify(obj)});
