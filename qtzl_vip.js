@@ -13,11 +13,11 @@ hostname = *.afunapp.com
 
 var body = $response.body;
 var obj = JSON.parse(body);
-console.log('Hello, world!');
-console.log(JSON.stringify(obj));
+
 obj.data.is_vip = true;
-obj.data.vip_type = 0;
+obj.data.vip_type = 2;
 console.log('------');
 console.log(JSON.stringify(obj));
+console.log('======');
 body = JSON.stringify(obj);
 $done(body);
