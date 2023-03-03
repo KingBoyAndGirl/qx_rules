@@ -15,7 +15,10 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 obj.data.is_vip = true;
-obj.data.vip_type = 2;
+obj.data.vip_type = 3;
+obj.data.unlock = true;
+obj.data.check_delay = true;
+obj.data.is_free_chat = true;
 console.log('------');
 console.log(JSON.stringify(obj));
 console.log('======');
