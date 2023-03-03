@@ -3,7 +3,7 @@
 QX:
 [rewrite_local]
 #解锁会员
-^https?:\/\/*\.afunapp\.com\/(proporty\/get_user_property|user\/get_user_info) url script-response-body https://raw.githubusercontent.com/KingBoyAndGirl/qx_rules/main/qtzl_vip.js
+https?:\/\/wx-love-api\.afunapp\.com\/(proporty\/get_user_property|user\/get_user_info) url script-response-body https://raw.githubusercontent.com/KingBoyAndGirl/qx_rules/main/qtzl_vip.js
 
 
 [mitm]
