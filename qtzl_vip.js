@@ -26,8 +26,5 @@ obj.data.moment_total = 1000;
 
 
 
-console.log('------');
-console.log(JSON.stringify(obj));
-console.log('======');
 body = JSON.stringify(obj);
 $done(body);
