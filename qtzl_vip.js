@@ -16,5 +16,6 @@ console.log('Hello, world!');
 console.log(obj);
 obj.data.is_vip = true;
 obj.data.vip_type = 0;
-
+console.log('===========');
+console.log(obj);
 $done({body: JSON.stringify(obj)});
