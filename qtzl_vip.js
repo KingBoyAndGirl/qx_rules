@@ -19,6 +19,13 @@ obj.data.vip_type = 3;
 obj.data.unlock = true;
 obj.data.check_delay = true;
 obj.data.is_free_chat = true;
+obj.data.check_delay = true;
+obj.data.is_blocked = true;
+obj.data.is_each_follow = true;
+obj.data.moment_total = 1000;
+
+
+
 console.log('------');
 console.log(JSON.stringify(obj));
 console.log('======');
